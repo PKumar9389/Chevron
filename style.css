@@ -1,0 +1,27 @@
+.chevron{
+    position: relative; 
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.chevron::before,
+.chevron::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    background: #dbd5d5;
+}
+
+.chevron::before{
+    left: 0;
+    transform: translate(4px, -50%) rotate(-45deg); 
+}
+
+.chevron::after{
+    right: 0;
+    transform: translate(-4px, -50%) rotate(45deg); 
+}
